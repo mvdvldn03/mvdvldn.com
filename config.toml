@@ -1,0 +1,27 @@
+baseURL = "https://mvdvldn.com/"
+local = "en-us"
+title = "Max van der Velden"
+enableRobotsTXT = true
+
+[params]
+  name = "Max van der Velden"
+  role = "Ph.D. Student, Sociology"
+  institution = "Princeton University"
+  email = "mvdvldn@gmail.com"
+  github = "https://github.com/mvdvldn03"
+  linkedin = "https://linkedin.com/in/mvdvldn"
+  prompt = "mvdvldn"
+  cv_drive_id = "1fNtT-2B_IRmhr_BEiJrTU4XjWfkKXE6f"
+
+[menu]
+  [[menu.main]]
+    name = "about"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "cv"
+    url = "/cv/"
+    weight = 2
+
+[markup.goldmark.renderer]
+  unsafe = true

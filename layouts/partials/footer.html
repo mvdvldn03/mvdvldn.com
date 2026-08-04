@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="mailto:{{ .Site.Params.email }}">email</a>
+    <span class="sep">/</span>
+    <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">github</a>
+    <span class="sep">/</span>
+    <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">linkedin</a>
+  </div>
+  <div class="footer-meta">
+    <span class="dim">last updated {{ now.Format "Jan 2006" }}</span>
+    <span class="cursor-blink">_</span>
+  </div>
+</footer>

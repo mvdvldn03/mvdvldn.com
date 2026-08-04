@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="cv-embed">
+  <iframe
+    src="https://drive.google.com/file/d/{{ .Site.Params.cv_drive_id }}/preview"
+    allow="autoplay"
+    loading="lazy">
+  </iframe>
+</div>
+{{ end }}
