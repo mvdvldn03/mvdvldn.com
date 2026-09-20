@@ -17,7 +17,7 @@
   <ul class="timeline-list">
     {{ range sort .Site.Data.timeline.events "date" "desc" }}
     <li>
-      <span class="tl-date">{{ dateFormat "Jan 2006" (printf "%s-01" .date) }}</span>
+      <span class="tl-date">({{ dateFormat "Jan 2006" (printf "%s-01" .date) }})</span>
       {{ .text }}
     </li>
     {{ end }}
