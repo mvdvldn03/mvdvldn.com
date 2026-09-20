@@ -341,12 +341,9 @@ h1 {
   font-size: 15px;
   line-height: 1.55;
 }
-.timeline-list li::marker { color: var(--ink-soft); }
 .timeline-list li:last-child { margin-bottom: 0; }
 
 .tl-date {
-  font-size: 14px;
-  color: var(--ink-soft);
   margin-right: 8px;
   white-space: nowrap;
 }
