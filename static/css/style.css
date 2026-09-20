@@ -144,9 +144,6 @@ h1 {
 
 .bio p {
   margin: 0 0 16px;
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
 }
 .bio strong { color: var(--ink); }
 
