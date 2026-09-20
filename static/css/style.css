@@ -392,5 +392,4 @@ h1 {
   h1 { font-size: 1.9rem; }
   .site-header { flex-direction: column; align-items: flex-start; }
   .skill-row { grid-template-columns: 1fr; gap: 2px; }
-  .tl-date { font-size: 11.5px; }
 }
