@@ -1,17 +1,9 @@
 events:
   - date: "2026-09"
-    type: "milestone"
-    title: "Began Ph.D. in Sociology"
-    venue: "Princeton University"
+    text: "I began my Ph.D. in Sociology at Princeton University."
 
   - date: "2026-07"
-    type: "conference"
-    title: "Role, Not Identity: Rethinking Diarization for Institutional Talk"
-    venue: "International Conference on Computational Social Science (IC2S2), 12th Annual Meeting, Parallel Talk, Burlington, VT"
-    slides: "1YtCMZnqKrUeW37Po0DNWylXlavsSN_7P"
+    text: "I presented \"Role, Not Identity: Rethinking Diarization for Institutional Talk\" at IC2S2 2026 in Burlington, VT."
 
   - date: "2026-05"
-    type: "conference"
-    title: "American Voices Project–Qualitative Classifier: A Supervised LLM System for Large-Scale, Data-Secure Qualitative Coding"
-    venue: "with A. Chow — Population Association of America (PAA) Annual Meeting, Oral Presentation, St. Louis, MO"
-    slides: "1QIwnVZE8lH1Hq_5vMfxu5hYS1jU05tki"
+    text: "Alex and I presented our work \"American Voices Project–Qualitative Classifier: A Supervised LLM System for Large-Scale, Data-Secure Qualitative Coding\" at PAA 2026 in St. Louis."

@@ -14,62 +14,13 @@
 
 <section class="cv-section">
   <h2 class="section-heading">Timeline</h2>
-  <div class="timeline">
-    {{ $events := sort .Site.Data.timeline.events "date" "desc" }}
-    {{ range $events }}
-    <div class="timeline-row">
-      <div class="tl-date">{{ dateFormat "Jan 2006" (printf "%s-01" .date) }}</div>
-      <div class="tl-line"></div>
-      <div class="tl-content">
-        <span class="tl-tag tl-tag-{{ .type }}">{{ .type }}</span>
-        <p class="entry-title">{{ .title }}</p>
-        <p class="entry-meta">{{ .venue }}</p>
-        {{ if .slides }}
-        <button type="button" class="slides-link" data-slides-id="{{ .slides }}">slides →</button>
-        {{ end }}
-      </div>
-    </div>
+  <ul class="timeline-list">
+    {{ range sort .Site.Data.timeline.events "date" "desc" }}
+    <li>
+      <span class="tl-date">{{ dateFormat "Jan 2006" (printf "%s-01" .date) }}</span>
+      {{ .text }}
+    </li>
     {{ end }}
-  </div>
+  </ul>
 </section>
-
-<div class="slides-modal" id="slides-modal" hidden>
-  <div class="slides-modal-backdrop" data-close></div>
-  <div class="slides-modal-panel">
-    <button type="button" class="slides-modal-close" data-close>close ✕</button>
-    <iframe id="slides-modal-iframe" src="" allow="autoplay" loading="lazy"></iframe>
-  </div>
-</div>
-
-<script>
-(function () {
-  var modal = document.getElementById('slides-modal');
-  var iframe = document.getElementById('slides-modal-iframe');
-
-  function openModal(id) {
-    iframe.src = 'https://drive.google.com/file/d/' + id + '/preview';
-    modal.hidden = false;
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModal() {
-    modal.hidden = true;
-    iframe.src = '';
-    document.body.style.overflow = '';
-  }
-
-  document.addEventListener('click', function (e) {
-    var trigger = e.target.closest('.slides-link');
-    if (trigger) {
-      openModal(trigger.getAttribute('data-slides-id'));
-      return;
-    }
-    if (e.target.closest('[data-close]')) closeModal();
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !modal.hidden) closeModal();
-  });
-})();
-</script>
 {{ end }}
